@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Dior Sauvage EDT 100ml",
+    "retailers": {
+      "FragranceNet": { "price": 95, "url": "https://www.fragrancenet.com/" },
+      "Jomashop": { "price": 99, "url": "https://www.jomashop.com/" },
+      "FragranceBuy": { "price": 135, "url": "https://fragrancebuy.ca/" }
+    }
+  },
+  {
+    "name": "Bleu de Chanel EDT 100ml",
+    "retailers": {
+      "FragranceNet": { "price": 120, "url": "https://www.fragrancenet.com/" },
+      "Jomashop": { "price": 118, "url": "https://www.jomashop.com/" },
+      "FragranceBuy": { "price": 150, "url": "https://fragrancebuy.ca/" }
+    }
+  }
+]
