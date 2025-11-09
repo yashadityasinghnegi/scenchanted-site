@@ -13,7 +13,7 @@ searchBtn.addEventListener("click", async () => {
   results.innerHTML = `<p>Searching for <strong>${query}</strong>...</p>`;
 
   try {
-    const response = await fetch("./data/fragrances.json");
+    const response = await fetch("./fragrances.json");
     const data = await response.json();
 
     const match = data.find(item => item.name.toLowerCase().includes(query));
