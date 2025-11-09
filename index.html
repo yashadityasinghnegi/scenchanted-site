@@ -3,38 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Scentchanted | Fragrance Lookup</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>Scentchanted | Fragrance Comparison Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f0ff, #f2f7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0.5rem 0;
+    }
+    .tagline {
+      font-style: italic;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+
+    /* Search Bar Styling */
+    .search-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 0.6rem 1rem;
+      width: 250px;
+      font-size: 1rem;
+      border-radius: 20px;
+      background: transparent;
+    }
+
+    button {
+      background-color: #b9a5d2;
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #d7a6a0;
+    }
+
+    .hint {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Welcome to <span class="brand">Scentchanted</span></h1>
-    <p class="tagline">Discover, Compare & Save on Your Signature Fragrance</p>
+  <h1>Welcome to Scenchanted</h1>
+  <p class="tagline">Compare Fragrances. Discover Your Signature Scent.</p>
+  <p>Our site is brewing something aromatic... Stay tuned!</p>
 
-    <div class="search-container">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Search for a fragrance (e.g., Dior Sauvage)"
-      />
-      <button id="searchBtn">🔍</button>
-    </div>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search for a fragrance..." />
+    <button>🔍</button>
+  </div>
 
-    <p class="hint">Start by typing a perfume name to explore prices.</p>
-  </header>
-
-  <!-- Placeholder for Search Results -->
-  <section id="results" class="results">
-    <p>Results will appear here...</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Scentchanted · hello@scenchanted.com</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <p class="hint">Type a perfume name to get started</p>
 </body>
 </html>
