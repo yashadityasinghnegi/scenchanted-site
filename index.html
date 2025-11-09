@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scentchanted | Fragrance Comparison Hub</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f5f0ff, #f2f7ff);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-      color: #333;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    .tagline {
-      font-style: italic;
-      color: #777;
-      margin-top: 0.5rem;
-    }
-  </style>
+  <title>Welcome to Scentchanted | Fragrance Lookup</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>Scenchanted</h1>
-  <h2>Be scent enchanted</h2>
-  <p class="tagline">Compare Fragrances. Discover Your Signature Scent.</p>
-  <p>Our site is brewing something aromatic... Stay tuned!</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to <span class="brand">Scentchanted</span></h1>
+    <p class="tagline">Discover, Compare & Save on Your Signature Fragrance</p>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a fragrance (e.g., Dior Sauvage)"
+      />
+      <button id="searchBtn">🔍</button>
+    </div>
+
+    <p class="hint">Start by typing a perfume name to explore prices.</p>
+  </header>
+
+  <!-- Placeholder for Search Results -->
+  <section id="results" class="results">
+    <p>Results will appear here...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Scentchanted · hello@scenchanted.com</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
