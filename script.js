@@ -1,9 +1,11 @@
-const searchBtn = document.querySelector("button");
+const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("search");
-const results = document.createElement("div");
-document.body.appendChild(results);
+const results = document.getElementById("results");
 
 searchBtn.addEventListener("click", async () => {
+  console.log("🔍 Search button clicked!");
+  console.log("Query entered:", searchInput.value);
+  console.log("Fetching:", window.location.origin + "/fragrances.json");
   const query = searchInput.value.trim().toLowerCase();
   if (!query) {
     results.innerHTML = "<p>Please enter a fragrance name.</p>";
@@ -13,7 +15,7 @@ searchBtn.addEventListener("click", async () => {
   results.innerHTML = `<p>Searching for <strong>${query}</strong>...</p>`;
 
   try {
-    const response = await fetch("./fragrances.json");
+    const response = await fetch("/fragrances.json");
     const data = await response.json();
 
     const match = data.find(item => item.name.toLowerCase().includes(query));
@@ -45,5 +47,11 @@ searchBtn.addEventListener("click", async () => {
   } catch (error) {
     console.error(error);
     results.innerHTML = "<p>Error loading data. Please try again later.</p>";
+  }
+});
+// Add Enter key support
+searchInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    searchBtn.click();
   }
 });
